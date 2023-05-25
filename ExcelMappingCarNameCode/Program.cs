@@ -43,7 +43,7 @@ namespace ExcelMappingCarNameCode
             {
                 while (reader.Read())
                 {
-                    if (i != 0 && !(reader[0] is null))
+                    if (i != 0 && !(reader[0] is null) && !string.IsNullOrWhiteSpace(reader[0].ToString()))
                     {
                         sb.AppendLine("<Group>");
 
