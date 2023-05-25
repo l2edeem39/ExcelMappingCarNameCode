@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32930.78
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelMappingCarNameCode", "ExcelMappingCarNameCode\ExcelMappingCarNameCode.csproj", "{377EE445-70F5-4939-8C1D-76ABB21BA833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{377EE445-70F5-4939-8C1D-76ABB21BA833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377EE445-70F5-4939-8C1D-76ABB21BA833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377EE445-70F5-4939-8C1D-76ABB21BA833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377EE445-70F5-4939-8C1D-76ABB21BA833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19D5BC8C-4F57-463F-8A89-3898B321A8A6}
+	EndGlobalSection
+EndGlobal
