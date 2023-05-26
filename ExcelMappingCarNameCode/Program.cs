@@ -43,29 +43,29 @@ namespace ExcelMappingCarNameCode
             {
                 while (reader.Read())
                 {
-                    if (i != 0 && !(reader[0] is null) && !string.IsNullOrWhiteSpace(reader[0].ToString()))
+                    if (i != 0 && !(reader[22] is null) && !string.IsNullOrWhiteSpace(reader[22].ToString()))
                     {
                         sb.AppendLine("<Group>");
 
                         sb.Append("<carname_code>");
-                        sb.Append(reader[0] is null ? "" : reader[0].ToString());
+                        sb.Append(reader[22] is null ? "" : reader[22].ToString());
                         sb.Append("</carname_code>");
 
-                        sb.Append("<carname_desc>");
-                        sb.Append(reader[1] is null ? "" : reader[1].ToString());
-                        sb.Append("</carname_desc>");
-
-                        sb.Append("<carname_model>");
-                        sb.Append(reader[2] is null ? "" : reader[2].ToString());
-                        sb.Append("</carname_model>");
-
-                        sb.Append("<carname_cc>");
+                        sb.Append("<car_desc_ssw>");
                         sb.Append(reader[3] is null ? "" : reader[3].ToString());
-                        sb.Append("</carname_cc>");
+                        sb.Append("</car_desc_ssw>");
 
-                        sb.Append("<car_option>");
+                        sb.Append("<car_model_ssw>");
                         sb.Append(reader[4] is null ? "" : reader[4].ToString());
-                        sb.AppendLine("</car_option>");
+                        sb.Append("</car_model_ssw>");
+
+                        sb.Append("<car_sub_model_ssw>");
+                        sb.Append(reader[5] is null ? "" : reader[5].ToString());
+                        sb.Append("</car_sub_model_ssw>");
+
+                        sb.Append("<car_register_model_year_ssw>");
+                        sb.Append(reader[6] is null ? "" : reader[6].ToString());
+                        sb.AppendLine("</car_register_model_year_ssw>");
 
                         sb.AppendLine("</Group>");
                     }
