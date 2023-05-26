@@ -18,7 +18,7 @@ namespace ExcelMappingCarNameCode
             String path = ConfigurationManager.AppSettings["FileExcel"].ToString();
             Console.WriteLine("Please Wait...");
 
-            var response = FileToTable(path);
+            var response = FileToXML(path);
 
             SqlConnection sqlCon = null;
             String SqlconString = ConfigurationManager.AppSettings["ConnectionString"].ToString();
@@ -34,7 +34,7 @@ namespace ExcelMappingCarNameCode
             }
             Console.WriteLine("Insert Table Completed...");
         }
-        private static string FileToTable(String pathFile)
+        private static string FileToXML(String pathFile)
         {
             var sb = new System.Text.StringBuilder();
             FileStream stream = File.Open(pathFile, FileMode.Open, FileAccess.Read);
